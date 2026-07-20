@@ -602,16 +602,22 @@
     <div class="info-card" onclick="toggleDetail(this)">
       <div class="info-head">
         <div class="info-num pos">+18,16 pp</div>
-        <div class="info-txt"><div class="info-ttl">H3 - Klaster Besar jauh lebih efisien dari Kecil</div>
-        <div class="info-sub">Dummy klaster punya koefisien terbesar dalam model</div></div>
+        <div class="info-txt"><div class="info-ttl">H3 - Efek klaster tetap positif, terpisah dari efek pagu</div>
+        <div class="info-sub">Bukan berarti pagu besar itu baik - dua efek yang berbeda</div></div>
         <span class="chevron">▾</span>
       </div>
       <div class="info-detail"><div class="info-detail-inner">
         <b>H3: "Terdapat perbedaan tingkat efisiensi yang signifikan antar klaster skala K/L."</b><br>
-        Setelah mengontrol pagu &amp; satker, klaster <b>Sedang +10,60 pp</b> dan <b>Besar +18,16 pp</b>
-        dibanding klaster Kecil (basis) - keduanya signifikan p&lt;0,001, dan merupakan koefisien
-        <b>terbesar</b> dalam seluruh model. <b>H3 diterima.</b> Ini memvalidasi keputusan metodologis untuk melakukan
-        klasterisasi tercile sejak awal: dimensi skala terbukti sangat relevan dan tak bisa diabaikan.
+        Sekilas ini terlihat berlawanan dengan H1 (pagu besar → skor turun), padahal keduanya konsisten karena
+        mengukur hal yang berbeda. <b>Log Pagu Total</b> pada H1 adalah efek kontinu: makin besar pagu suatu K/L
+        <i>dibandingkan K/L lain dalam klaster yang sama</i>, makin rendah skornya. <b>Dummy klaster</b> pada H3
+        adalah efek kategorik terpisah, dengan Sedang <b>+10,60 pp</b> dan Besar <b>+18,16 pp</b> dibanding Kecil
+        (basis) - keduanya signifikan p&lt;0,001 setelah pagu &amp; satker dikontrol. <b>H3 diterima.</b>
+        Artinya K/L di klaster Besar rata-rata punya keunggulan struktural lain (mis. keleluasaan realokasi
+        antar program) yang tidak tertangkap oleh pagu itu sendiri, sehingga menutupi sebagian penalti dari
+        besarnya pagu yang mereka kelola. Ini memvalidasi keputusan metodologis untuk melakukan klasterisasi
+        tercile sejak awal: dimensi skala relevan, tetapi arah pengaruhnya berbeda antara "besar pagu absolut" (H1, negatif)
+        dan "termasuk kelompok skala besar" (H3, positif).
       </div></div>
     </div>
     <div class="info-card" onclick="toggleDetail(this)">
