@@ -1244,6 +1244,7 @@ function updateKKPanel(){
   document.getElementById('kk-grid').innerHTML = kks.map(k=>
     `<div class="kk-yr"><div class="y">${k.tahun}</div><div class="s">${fmt(k.dea_score)}</div>
      <div class="r">Rank ${k.rank_dea}/${k.n_klaster}</div>
+     <div class="r">Pagu ${rp(k.pagu_total)}</div>
      <div class="r">Serap ${pct(k.rasio_penyerapan)}</div></div>`).join('');
 
   document.getElementById('kk-trend-ins').innerHTML =
